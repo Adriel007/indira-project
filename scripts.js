@@ -1,10 +1,7 @@
 const iframe = document.getElementById("frame");
 const tools = document.getElementById("tools");
-const personalizar = document.getElementById("personalizar");
-const root = document.querySelector(":root");
 const container = document.getElementById("container");
 const loading = document.getElementById("loading");
-document.body.style.zoom = "67%";
 
 let color = 0;
 let zoom = 100;
