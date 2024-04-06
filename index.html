@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="src/logo.png" type="image/extension" sizes="16x16">
+    <title>
+        AceSS
+    </title>
+    <meta name="description" content="Descrição">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <figure>
+            <img src="src/logo.png">
+            <figcaption>
+                <h1>
+                    AceSS
+                </h1>
+                <h3>
+                    Descubra a sua maneira de navegar
+                </h3>
+            </figcaption>
+        </figure>
+        <button id="start" onclick="start()">Navegar</button>
+
+        <div id="loading">
+            <figure>
+                <img src="src/logo.png">
+                <figcaption>
+                    <h1>
+                        AceSS esta carregando...
+                    </h1>
+                </figcaption>
+        </div>
+
+    </div>
+    <iframe id="frame" src="menu.html"></iframe>
+    <div id="tools">
+        <i class="bi bi-gear h1" onclick="menu()"></i>
+        <!--
+        <button onclick="menu()">Menu</button>
+        <button onclick="blackAndWhite()">Preto e branco</button>
+        <button onclick="invert()">Inverter</button>
+        <button onclick="highContrast()">Alto contraste</button>
+        <button onclick="satured()">Saturação</button>
+        <button onclick="colorBlind()">Daltônismo</button>
+        <button onclick="moreBright()">+ Brilho</button>
+        <button onclick="lessBright()">- Brilho</button>
+        -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
