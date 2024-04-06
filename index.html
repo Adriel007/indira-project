@@ -43,19 +43,51 @@
     </div>
     <iframe id="frame" src="menu.html"></iframe>
     <div id="tools">
-        <i class="bi bi-gear h1" onclick="menu()"></i>
-        <!--
-        <button onclick="menu()">Menu</button>
-        <button onclick="blackAndWhite()">Preto e branco</button>
-        <button onclick="invert()">Inverter</button>
-        <button onclick="highContrast()">Alto contraste</button>
-        <button onclick="satured()">Saturação</button>
-        <button onclick="colorBlind()">Daltônismo</button>
-        <button onclick="moreBright()">+ Brilho</button>
-        <button onclick="lessBright()">- Brilho</button>
-        -->
+        <button onclick="blackAndWhite()">
+            <i class="bi h1 bi-circle-half"></i>
+            <span class="legend">Preto e Branco</span>
+          </button>
+          <button onclick="invert()">
+            <i class="bi h1 bi-arrow-repeat"></i>
+            <span class="legend">Inverter cores</span>
+          </button>
+          <button onclick="highContrast()">
+            <i class="bi h1 bi-palette-fill"></i>
+            <span class="legend">Alto Contraste</span>
+          </button>
+          <button onclick="satured()">
+            <i class="bi h1 bi-highlights"></i>
+            <span class="legend">Saturado</span>
+          </button>
+          <button onclick="colorBlind()">
+            <i class="bi h1 bi-eye-fill"></i>
+            <span class="legend">Daltonismo</span>
+          </button>
+          <button onclick="moreBright()">
+            <i class="bi h1 bi-brightness-high-fill"></i>
+            <span class="legend">Aumentar Brilho</span>
+          </button>
+          <button onclick="lessBright()">
+            <i class="bi h1 bi-brightness-low-fill"></i>
+            <span class="legend">Diminuir Brilho</span>
+          </button>
+          <button onclick="zoomIn()">
+            <i class="bi h1 bi-zoom-in"></i>
+            <span class="legend">Aumentar Zoom</span>
+          </button>
+          <button onclick="zoomOut()">
+            <i class="bi h1 bi-zoom-out"></i>
+            <span class="legend">Diminuir Zoom</span>
+          </button>
+          <button onclick="reset()">
+            <i class="bi h1 bi-arrow-clockwise"></i>
+            <span class="legend">Resetar</span>
+          </button>
+          <button onclick="menu()">
+            <i class="bi h1 bi-list"></i>
+            <span class="legend">Voltar ao menu</span>
+        </button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="scripts.js"></script>
 </body>
 

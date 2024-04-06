@@ -20,10 +20,24 @@ function start() {
 }
 
 function menu() {
-  iframe.src = "#";
   iframe.style.display = "none";
-  tools.style.display = "none";
   container.style.display = "flex";
+  tools.style.display = "none";
+}
+
+function reset() {
+  iframe.style.filter = "none";
+  iframe.style.transform = "scale(1)";
+}
+
+function zoomIn() {
+  zoom += 10;
+  iframe.style.transform = "scale(" + zoom / 100 + ")";
+}
+
+function zoomOut() {
+  zoom -= 10;
+  iframe.style.zoom = zoom + "%";
 }
 
 function blackAndWhite() {

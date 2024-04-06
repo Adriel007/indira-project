@@ -12,27 +12,48 @@ body {
 }
 
 /* index css */
-
 #tools {
-  position: fixed;
+  display: none;
+  align-items: flex-start;
+  justify-content: space-around;
   top: calc(-3.5em / 2);
-  left: calc(50% - (4em / 2));
-  padding-top: .5em;
+  width: 100%;
+  height: auto;
+  position: fixed;
+}
+
+#tools button {
+  outline: none;
+  margin-top: .5em;
   width: 4em;
   height: 4em;
   border-radius: 100%;
   background-color: navy;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all ease-in-out 2s;
+  transition: all ease-in-out 1s;
 }
 
-#tools:hover {
+#tools button span {
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2px;
+  font-weight: bold;
+  transition: all linear 3s;
+}
+
+#tools button:hover span {
+  opacity: 100%;
+  margin-top: 25px;
+  display: block;
+}
+
+#tools button:hover {
   cursor: pointer;
-  top: calc(4em / 4);
-  transform: rotate(180deg);
+  margin-top: 2em;
 }
 
 #frame {
